@@ -1,8 +1,10 @@
-import Head from 'next/head'
+import Button from "components/button"
 
 const Home = () => {
   return (
-    <div>home</div>
+    <div>
+      <Button/>
+    </div>
   )
 }
 
