@@ -19,7 +19,14 @@
     "jsx": "preserve",
     "baseUrl": ".",
     "paths": {
-      "components/*": ["components/*"]
+      "components/*": ["components/*"],
+      "containers/*": ["containers/*"],
+      "layout": ["containers/layout"],
+      "images/*": ["images/*"],
+      "types/*": ["types/*"],
+      "hooks/*": ["hooks/*"],
+      "contexts/*": ["contexts/*"],
+      "styles/*": ["styles/*"],
     }
   },
   "include": [
