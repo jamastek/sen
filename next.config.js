@@ -20,12 +20,4 @@ module.exports = {
 
     return config
   },
-  async rewrites() {
-    return [
-      {
-        source: '/blog',
-        destination: 'https://mhmmr.github.io/', // Matched parameters can be used in the destination
-      },
-    ]
-  },
 }
