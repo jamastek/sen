@@ -13,7 +13,7 @@
 - ✅ Styled Components
 - ✅ Framer Motion
 
-### Strucures
+### Structures
 
 ```text
 nextjs-boilerplate
