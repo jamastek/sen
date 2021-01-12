@@ -1,21 +1,28 @@
 import { useMemo } from 'react'
-import { ApolloClient, InMemoryCache } from '@apollo/client'
+import { ApolloClient } from '@apollo/client'
+import { cache } from "./cache"
 
 let apolloClient
 
-function createIsomorphLink() {
-  const { HttpLink } = require('@apollo/client/link/http')
-  return new HttpLink({
-    uri: process.env.NEXT_PUBLIC_API_URL,
-    credentials: 'same-origin',
-  })
-}
+// function createIsomorphLink() {
+//   if (typeof window === 'undefined') {
+//     const { SchemaLink } = require('@apollo/client/link/schema')
+//     const { schema } = require('./schema')
+//     return new SchemaLink({ schema })
+//   } else {
+//     const { HttpLink } = require('@apollo/client/link/http')
+//     return new HttpLink({
+//       uri: process.env.NEXT_PUBLIC_API_URL,
+//       credentials: 'same-origin',
+//     })
+//   }
+// }
 
 function createApolloClient() {
   return new ApolloClient({
     ssrMode: typeof window === 'undefined',
-    link: createIsomorphLink(),
-    cache: new InMemoryCache(),
+    // link: createIsomorphLink(),
+    cache
   })
 }
 
