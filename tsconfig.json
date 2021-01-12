@@ -26,7 +26,6 @@
       "types/*": ["types/*"],
       "hooks/*": ["hooks/*"],
       "apollo/*": ["apollo/*"],
-      "contexts/*": ["contexts/*"],
       "styles/*": ["styles/*"],
     }
   },
