@@ -1,7 +1,16 @@
-<h1>Nextep.js</h1>
-<p>Boilerplate for Next.js (Prisma + Nexus + Apollo + TypeScript + Tailwindcss)</p>
+# Nextep.js 🧑‍🚀
+#### Boilerplate for Next.js
 
-## Getting Started
+## Getting 
+
+### Features
+- ✅ Next.js
+- ✅ Tailwindcss
+- ✅ Typescript
+- ✅ Apollo GraphQL
+- ✅ Prisma
+- ✅ Nexus
+- ✅ Styled Components
 
 First, run the development server:
 
