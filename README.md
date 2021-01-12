@@ -11,6 +11,53 @@
 - ✅ Prisma
 - ✅ Nexus
 - ✅ Styled Components
+- ✅ Framer Motion
+
+### Strucures
+
+```text
+nextjs-boilerplate
+├── apollo
+│   ├── models
+│   │   └── index.ts
+│   ├── mutations
+│   │   └── index.ts
+│   ├── queries
+│   │   └── index.ts
+│   ├── states
+│   │   └── index.ts
+│   ├── cache.ts
+│   ├── client.ts
+├── components
+│   ├── button
+│   │   └── index.ts
+├── containers
+│   ├── layout
+│   │   └── index.ts
+├── lib
+├── pages
+│   ├── index.ts
+├── prisma
+│   ├── migrations
+│   │   └── index.ts
+│   ├── nexus
+│   │   └── index.ts
+│   ├── object-types
+│   │   └── index.ts
+│   ├── schema.prisma
+│   ├── schema.ts
+├── public
+├── styles
+│   ├── global.css
+├── .gitignore
+├── next-env.d.ts
+├── next.config.js
+├── postcss.config.js
+├── tailwind.config.js
+├── tsconfig.json
+├── LICENSE
+└── package.json
+```
 
 First, run the development server:
 
