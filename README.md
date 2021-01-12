@@ -34,10 +34,14 @@ nextjs-boilerplate
 ├── containers
 │   ├── layout
 │   │   └── index.ts
-├── lib
 ├── pages
+│   ├── api
+│   │   └── graphql
+│   │       └── index.ts
 │   ├── index.ts
 ├── prisma
+│   ├── client  // prisma-client
+│   │   └── index.ts
 │   ├── migrations
 │   │   └── index.ts
 │   ├── nexus
