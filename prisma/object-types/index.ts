@@ -6,7 +6,7 @@ import {
   objectType,
   stringArg,
 } from 'nexus'
-import prisma from "../../lib/prisma"
+import prisma from "../client"
 
 export const GQLDate = asNexusMethod(GraphQLDate, 'date')
 
