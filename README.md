@@ -1,6 +1,16 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Nextep.js 🧑‍🚀
+#### Boilerplate for Next.js
 
-## Getting Started
+## Getting 
+
+### Features
+- ✅ Next.js
+- ✅ Tailwindcss
+- ✅ Typescript
+- ✅ Apollo GraphQL
+- ✅ Prisma
+- ✅ Nexus
+- ✅ Styled Components
 
 First, run the development server:
 
@@ -14,12 +24,17 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-## Learn More
+### Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
 - [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [Learn Apollo GraphQL](https://www.apollographql.com/)
+- [Learn Nexus](https://nexusjs.org/)
+- [Learn Prisma](https://www.prisma.io/)
+- [Learn Styled Components](https://styled-components.com/)
+- [Learn Typescript](https://www.typescriptlang.org/)
 
 You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
