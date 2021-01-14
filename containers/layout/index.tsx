@@ -1,13 +1,17 @@
-import { Children } from "react"
+import Container from "components/container"
+import { LayoutPropTypes } from "types"
 
-const Layout = ({children}) => {
-  return (
-    <div>
-      <div className="container">
-        {children}
-      </div>
-    </div>
-  )
+const Layout: React.FC<LayoutPropTypes> = ({children, type}) => {
+  switch (type) {
+    default:
+      return (
+        <div>
+          <Container>
+            {children}
+          </Container>
+        </div>
+      )
+  }
 }
 
 export default Layout
