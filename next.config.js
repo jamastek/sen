@@ -10,6 +10,7 @@ const aliases = {
   contexts: path.resolve(__dirname, "contexts"),
   apollo: path.resolve(__dirname, "apollo"),
   lib: path.resolve(__dirname, "lib"),
+  prisma: path.resolve(__dirname, "prisma"),
   styles: path.resolve(__dirname, "styles"),
 };
 

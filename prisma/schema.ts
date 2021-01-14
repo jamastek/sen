@@ -1,9 +1,9 @@
 import { makeSchema } from 'nexus'
 import path from 'path'
-import { Query, Mutation, Post, User, GQLDate } from "./nexus"
+import * as allTypes from "./nexus"
 
 const schema = makeSchema({
-  types: [Query, Mutation, Post, User, GQLDate],
+  types: allTypes,
   outputs: {
     typegen: path.join(process.cwd(), 'prisma/generated/nexus-typegen.ts'),
     schema: path.join(process.cwd(), 'prisma/generated/schema.graphql'),

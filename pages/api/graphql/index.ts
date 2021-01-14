@@ -1,5 +1,5 @@
 import { ApolloServer } from 'apollo-server-micro'
-import schema from "../../../prisma/schema"
+import schema from "prisma/schema"
 
 export const config = {
   api: {
