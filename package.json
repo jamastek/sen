@@ -7,7 +7,7 @@
     "start": "next start",
     "prisma:generate": "prisma generate",
     "prisma:migration": "prisma migrate dev --preview-feature",
-    "nexus:generate": "ts-node --compiler-options '{\"module\":\"CommonJS\"}' --transpile-only prisma/schema",
+    "nexus:generate": "ts-node-dev --transpile-only prisma/schema",
     "build": "npm run build:nexus-typegen && next build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
