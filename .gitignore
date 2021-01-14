@@ -12,7 +12,7 @@
 /.next/
 /out/
 /prisma/migrations
-/prisma/nexus
+/prisma/generated
 
 # production
 /build
