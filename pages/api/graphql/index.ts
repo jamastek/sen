@@ -3,7 +3,7 @@ import { applyMiddleware } from "graphql-middleware"
 import schema from "prisma/schema"
 
 const logResult = async (resolve, root, args, context, info) => {
-  console.log(`2. logResult`)
+  console.log("2. logResult")
   const result = await resolve(root, args, context, info)
   console.log(`4. logResult: ${JSON.stringify(result)}`)
   return result
@@ -21,5 +21,5 @@ export default new ApolloServer({
   schema: schemaMiddleware
 })
 .createHandler({
-  path: '/api/graphql',
+  path: "/api/graphql",
 })

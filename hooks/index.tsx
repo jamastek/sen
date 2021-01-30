@@ -13,3 +13,15 @@ export const useToggle = (): [boolean, any] => {
 
   return [toggle, handlers]
 }
+
+export const useInput = (): [string, any] => {
+  const [value, setValue] = useState("")
+
+  const handlers = useMemo(() => {
+    return {
+      handleChange: (e) => setValue(e.target.value)
+    }
+  }, [])
+
+  return [value, handlers]
+}
