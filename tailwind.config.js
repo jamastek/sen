@@ -6,9 +6,14 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    container: {
-      center: true,
-      padding: "1.5rem"
+    extend: {
+      fontSize: {
+        tiny: "0.94rem"
+      },
+      container: {
+        center: true,
+        padding: "1.5rem"
+      }
     }
   },
   variants: {
