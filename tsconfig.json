@@ -1,4 +1,9 @@
 {
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
   "compilerOptions": {
     "target": "es5",
     "lib": [
@@ -27,6 +32,7 @@
       "hooks/*": ["hooks/*"],
       "apollo/*": ["apollo/*"],
       "styles/*": ["styles/*"],
+      "prisma/*": ["prisma/*"],
     }
   },
   "include": [

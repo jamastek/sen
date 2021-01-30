@@ -40,13 +40,18 @@ nextjs-boilerplate
 │   │       └── index.ts
 │   ├── index.ts
 ├── prisma
-│   ├── client  // prisma-client
+│   ├── client  #prisma-client
 │   │   └── index.ts
-│   ├── migrations
+│   ├── migrations #prisma migration
 │   │   └── index.ts
+│   ├── generated #nexus generate
+│   │   └── nexus-typegen.ts
+│   │   ├── schema.graphql
 │   ├── nexus
-│   │   └── index.ts
-│   ├── object-types
+│   │   ├── schema
+│   │   │   ├── _migrations.ts
+│   │   │   ├── _queries.ts
+│   │   │   ├── post.ts
 │   │   └── index.ts
 │   ├── schema.prisma
 │   ├── schema.ts
@@ -61,6 +66,19 @@ nextjs-boilerplate
 ├── tsconfig.json
 ├── LICENSE
 └── package.json
+```
+
+### Environment
+
+```
+# .env
+DATABASE_URL=mysql://example:example@localhost:3306/db_name
+NEXT_PUBLIC_API_URL=/api/graphql
+
+# .env.local //create this file to overrides .env file, very secret
+DATABASE_URL=mysql://example:example@localhost:3306/db_name
+NEXT_PUBLIC_ANALYTICS_ID=
+NEXT_PUBLIC_API_URL=/api/graphql
 ```
 
 First, run the development server:
