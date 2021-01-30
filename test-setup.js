@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-function */
 window.matchMedia =
   window.matchMedia ||
   function() {

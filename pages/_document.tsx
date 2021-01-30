@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import Document from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
 

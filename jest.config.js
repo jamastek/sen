@@ -16,13 +16,17 @@ const paths = {
 
 module.exports = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.ts', "<rootDir>/test-setup.js"],
-  testPathIgnorePatterns: ['<rootDir>/.next/', '<rootDir>/node_modules/'],
+  testPathIgnorePatterns: ["<rootDir>[/\\\\](node_modules|.next)[/\\\\]"],
   modulePaths: [
     "<rootDir>"
   ],
+  watchPlugins: [
+    'jest-watch-typeahead/filename',
+    'jest-watch-typeahead/testname',
+  ],
   moduleNameMapper: {
     "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
-    "\\.(css|less)$": "identity-obj-proxy",
+    "\\.(css|less|sass|scss)$": "identity-obj-proxy",
     ...pathsToModuleNameMapper(paths)
   }
 };
