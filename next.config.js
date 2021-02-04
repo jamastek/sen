@@ -12,6 +12,8 @@ const aliases = {
   lib: path.resolve(__dirname, "lib"),
   prisma: path.resolve(__dirname, "prisma"),
   styles: path.resolve(__dirname, "styles"),
+  services: path.resolve(__dirname, "services"),
+  utils: path.resolve(__dirname, "utils"),
 };
 
 module.exports = {

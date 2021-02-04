@@ -32,6 +32,8 @@
       "hooks/*": ["hooks/*"],
       "apollo/*": ["apollo/*"],
       "styles/*": ["styles/*"],
+      "services/*": ["services/*"],
+      "utils/*": ["utils/*"],
       "prisma/*": ["prisma/*"],
     }
   },
