@@ -1,27 +1,53 @@
-import { useMemo } from 'react'
-import { ApolloClient } from '@apollo/client'
+import { useMemo } from "react"
+import { ApolloClient } from "@apollo/client"
 import { cache } from "./cache"
 
 let apolloClient
 
-// function createIsomorphLink() {
-//   if (typeof window === 'undefined') {
-//     const { SchemaLink } = require('@apollo/client/link/schema')
-//     const { schema } = require('./schema')
-//     return new SchemaLink({ schema })
-//   } else {
-//     const { HttpLink } = require('@apollo/client/link/http')
-//     return new HttpLink({
-//       uri: process.env.NEXT_PUBLIC_API_URL,
-//       credentials: 'same-origin',
-//     })
-//   }
-// }
+function createIsomorphLink() {
+  if (typeof window === "undefined") {
+    const { SchemaLink } = require("@apollo/client/link/schema")
+    const { schema } = require("../prisma/schema")
+    return new SchemaLink({ schema })
+  } else {
+    const { HttpLink } = require("@apollo/client/link/http")
+    const ApolloLink = require("apollo-link")
+    // const { setContext } = require("@apollo/client/link/context")
+    // const { onError } = require("@apollo/client/link/error")
+
+    const httpLink = new HttpLink({
+      uri: "/api/graphql",
+      credentials: "same-origin",
+    })
+    // const errorLink = onError(({ graphQLErrors, networkError }) => {
+    //   if (graphQLErrors)
+    //     graphQLErrors.forEach(({ message, locations, path }) => {
+    //       console.log(
+    //         `[GraphQL error]: Message: ${message}, Location: ${locations}, Path: ${path}`
+    //       )
+    //     }
+    //     );
+    //   if (networkError) console.log(`[Network error]: ${networkError}`);
+    // })
+
+    // const authLink = setContext((_, { headers }) => {
+    //   const token = getToken()
+    //   return {
+    //     headers: {
+    //       ...headers,
+    //       authorization: token ? `Bearer ${token}` : "",
+    //     }
+    //   }
+    // });
+
+    return ApolloLink.from([httpLink])
+  }
+}
 
 function createApolloClient() {
   return new ApolloClient({
-    ssrMode: typeof window === 'undefined',
-    // link: createIsomorphLink(),
+    ssrMode: typeof window === "undefined",
+    link: createIsomorphLink(),
     cache
   })
 }
@@ -35,7 +61,7 @@ export function initializeApollo(initialState = null) {
     _apolloClient.cache.restore(initialState)
   }
   // For SSG and SSR always create a new Apollo Client
-  if (typeof window === 'undefined') return _apolloClient
+  if (typeof window === "undefined") return _apolloClient
   // Create the Apollo Client once in the client
   if (!apolloClient) apolloClient = _apolloClient
 
