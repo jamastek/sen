@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require("path");
 
 const aliases = {
   containers: path.resolve(__dirname, "containers"),
@@ -12,10 +12,13 @@ const aliases = {
   lib: path.resolve(__dirname, "lib"),
   prisma: path.resolve(__dirname, "prisma"),
   styles: path.resolve(__dirname, "styles"),
+  services: path.resolve(__dirname, "services"),
+  utils: path.resolve(__dirname, "utils"),
 };
 
 module.exports = {
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+  // webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) 
+  webpack: (config) => {
     config.resolve = {
       ...config.resolve,
       alias: {...config.resolve.alias, ...aliases}

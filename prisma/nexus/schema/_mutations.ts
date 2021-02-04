@@ -2,14 +2,14 @@ import {
   nonNull,
   objectType,
   stringArg,
-} from 'nexus'
+} from "nexus"
 import prisma from "../../client"
 
 export const Mutation = objectType({
-  name: 'Mutation',
+  name: "Mutation",
   definition(t) {
-    t.field('signupUser', {
-      type: 'User',
+    t.field("signupUser", {
+      type: "User",
       args: {
         name: stringArg(),
         email: nonNull(stringArg()),
@@ -24,8 +24,8 @@ export const Mutation = objectType({
       },
     })
 
-    t.nullable.field('deletePost', {
-      type: 'Post',
+    t.nullable.field("deletePost", {
+      type: "Post",
       args: {
         postId: stringArg(),
       },
@@ -36,8 +36,8 @@ export const Mutation = objectType({
       },
     })
 
-    t.field('createDraft', {
-      type: 'Post',
+    t.field("createDraft", {
+      type: "Post",
       args: {
         title: nonNull(stringArg()),
         content: stringArg(),
@@ -57,8 +57,8 @@ export const Mutation = objectType({
       },
     })
 
-    t.nullable.field('publish', {
-      type: 'Post',
+    t.nullable.field("publish", {
+      type: "Post",
       args: {
         postId: stringArg(),
       },

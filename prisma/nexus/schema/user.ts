@@ -1,14 +1,14 @@
-import { objectType } from 'nexus'
+import { objectType } from "nexus"
 import prisma from "../../client"
 
 export const User = objectType({
-  name: 'User',
+  name: "User",
   definition(t) {
-    t.int('id')
-    t.string('name')
-    t.string('email')
-    t.list.field('posts', {
-      type: 'Post',
+    t.int("id")
+    t.string("name")
+    t.string("email")
+    t.list.field("posts", {
+      type: "Post",
       resolve: (parent) =>
         prisma.user
           .findUnique({
