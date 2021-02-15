@@ -1,16 +1,21 @@
-const Button = (props) => {
+const Button: React.FC<ButtonProps> = ({children}) => {
+
   return (
-    <button className="p-4 bg-blue-600 rounded-md" {...props}>test</button>
+    <button className="p-4 bg-blue-600 rounded-md">{children}</button>
   )
 }
 
 export default Button
 
+Button.defaultProps = {
+  type: "primary"
+}
+
 export interface ButtonProps {
   /**
    * Is this the principal call to action on the page?
    */
-  primary?: boolean;
+  type: "primary" | "secondary" | "danger";
   /**
    * What background color to use
    */
@@ -18,7 +23,7 @@ export interface ButtonProps {
   /**
    * How large should the button be?
    */
-  size?: 'small' | 'medium' | 'large';
+  size?: "small" | "medium" | "large";
   /**
    * Button contents
    */
@@ -27,4 +32,5 @@ export interface ButtonProps {
    * Optional click handler
    */
   onClick?: () => void;
+  children: React.ReactNode
 }
