@@ -42,7 +42,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
-    "@prisma/cli": "^2.18.0",
     "@storybook/addon-actions": "^6.1.18",
     "@storybook/addon-essentials": "^6.1.18",
     "@storybook/addon-info": "^5.3.21",
@@ -65,6 +64,7 @@
     "jest": "^26.6.3",
     "jest-watch-typeahead": "^0.6.1",
     "mdx-embed": "^0.0.19",
+    "prisma": "^2.18.0",
     "storybook-addon-mdx-embed": "^0.0.19",
     "ts-jest": "^26.5.1",
     "ts-node": "^9.1.1",
