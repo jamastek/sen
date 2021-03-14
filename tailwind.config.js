@@ -1,3 +1,5 @@
+const colors = require("tailwindcss/colors")
+
 module.exports = {
   purge: [
     "./pages/**/*.{js,jsx,ts,tsx}",
@@ -13,7 +15,10 @@ module.exports = {
       container: {
         center: true,
         padding: "1.5rem"
-      }
+      },
+      colors: {
+        blueGray: colors.blueGray
+      },
     }
   },
   variants: {
