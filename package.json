@@ -29,7 +29,7 @@
     "js-cookie": "^2.2.1",
     "jsonwebtoken": "^8.5.1",
     "micro-cors": "^0.1.1",
-    "next": "^10.0.6",
+    "next": "^10.0.9",
     "nexus": "^1.0.0",
     "postcss": "^8.2.6",
     "postcss-loader": "4.2.0",
