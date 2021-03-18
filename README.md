@@ -1,11 +1,6 @@
 <img alt="" src="https://res.cloudinary.com/muhrusdi/image/upload/v1616096134/senja-cover.jpg">
 
 
-<h1 align="center">Nextjs Boilerplate 🧑‍🚀</h1>
-#### The modern Next.js & GraphQL boilerplate
-
-## Getting 
-
 ### Features
 - ✅ Next.js
 - ✅ Tailwindcss
