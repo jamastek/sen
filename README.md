@@ -1,5 +1,5 @@
-# Nextep.js 🧑‍🚀
-#### Boilerplate for Next.js
+# Nextjs Boilerplate 🧑‍🚀
+#### The modern Next.js & GraphQL boilerplate
 
 ## Getting 
 
@@ -12,6 +12,9 @@
 - ✅ Nexus
 - ✅ Styled Components
 - ✅ Framer Motion
+- ✅ React Hook Form
+- ✅ Storybookjs
+- ✅ React Testing Library
 
 ### Structures
 
