@@ -8,11 +8,12 @@
 - ✅ Apollo GraphQL
 - ✅ Prisma
 - ✅ Nexus
-- ✅ Styled Components
+- ✅ Styled Components (Consider use Stitches)
 - ✅ Framer Motion
 - ✅ React Hook Form
 - ✅ Storybookjs
 - ✅ React Testing Library
+- ✅ React Icons
 
 ### Structures
 
