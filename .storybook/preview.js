@@ -2,7 +2,8 @@ import { addDecorator } from '@storybook/react';
 import { withInfo } from '@storybook/addon-info';
 import Layout from "./components/layout"
 import { DocsContainer } from '@storybook/addon-docs/blocks';
-import { MDXEmbedProvider } from 'mdx-embed';
+import { MDXEmbedProvider } from 'mdx-embed'
+import "../styles/globals.css"
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -15,7 +16,7 @@ export const parameters = {
   },
 }
 
-addDecorator(storyFn => <Layout>{storyFn()}</Layout>);
+// addDecorator(storyFn => <Layout>{storyFn()}</Layout>);
 addDecorator(withInfo({
   inline: true,
   propTablesExclude: [Layout]

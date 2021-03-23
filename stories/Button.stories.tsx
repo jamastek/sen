@@ -5,7 +5,7 @@ import { Story, Meta } from "@storybook/react/types-6-0";
 import Button, { ButtonProps } from "components/button";
 
 export default {
-  title: "Example/Button",
+  title: "Button",
   component: Button,
   argTypes: {
     backgroundColor: { control: "color" },
@@ -20,25 +20,38 @@ const Template: Story<ButtonProps> = ({children, ...args}) => {
   )
 };
 
+export const Default = Template.bind({});
 export const Primary = Template.bind({});
+export const Secondary = Template.bind({});
+export const Large = Template.bind({});
+export const Medium = Template.bind({});
+export const Small = Template.bind({});
+
+Default.args = {
+  type: "default",
+  children: "Button",
+};
+
 Primary.args = {
   type: "primary",
   children: "Button",
 };
 
-export const Secondary = Template.bind({});
 Secondary.args = {
   children: "Button",
 };
 
-export const Large = Template.bind({});
 Large.args = {
-  size: "large",
+  size: "lg",
   children: "Button",
 };
 
-export const Small = Template.bind({});
+Medium.args = {
+  size: "md",
+  children: "Button",
+};
+
 Small.args = {
-  size: "small",
+  size: "sm",
   children: "Button",
 };
