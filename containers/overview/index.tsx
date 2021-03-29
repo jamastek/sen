@@ -39,7 +39,7 @@ const Overview: React.FC = () => {
             </div>
             <p className="text-xl mt-6 text-gray-600">The modern Next.js & GraphQL boilerplate</p>
           </div>
-          <ul className="flex justify-center mt-6 text-gray-400">
+          <ul className="flex justify-center mt-4 text-gray-400">
             <li className="px-2">
               <a href="#" className="text-indigo-600 hover:text-indigo-700 transition-all">Documentation</a>
             </li>
