@@ -1,57 +1,39 @@
 import React from "react";
-// also exported from '@storybook/react' if you can deal with breaking changes in 6.1
-import { Story, Meta } from "@storybook/react/types-6-0";
+import { Story, Meta } from "@storybook/react";
 
 import Button, { ButtonProps } from "components/button";
 
 export default {
-  title: "Button",
+  title: "Example/Button",
   component: Button,
   argTypes: {
     backgroundColor: { control: "color" },
   },
 } as Meta;
 
-const Template: Story<ButtonProps> = ({children, ...args}) => {
-  return (
-    <Button {...args}>
-      {children}
-    </Button>
-  )
-};
+const Template: Story<ButtonProps> = (args) => <Button {...args}>Tesst</Button>;
 
-export const Default = Template.bind({});
 export const Primary = Template.bind({});
-export const Secondary = Template.bind({});
-export const Large = Template.bind({});
-export const Medium = Template.bind({});
-export const Small = Template.bind({});
-
-Default.args = {
-  type: "default",
-  children: "Button",
-};
-
 Primary.args = {
-  type: "primary",
-  children: "Button",
+  primary: true,
+  label: "Button",
+  type: "default"
 };
 
+export const Secondary = Template.bind({});
 Secondary.args = {
-  children: "Button",
+  label: "Button",
+  type: "primary"
 };
 
+export const Large = Template.bind({});
 Large.args = {
-  size: "lg",
-  children: "Button",
+  size: "large",
+  label: "Button",
 };
 
-Medium.args = {
-  size: "md",
-  children: "Button",
-};
-
+export const Small = Template.bind({});
 Small.args = {
-  size: "sm",
-  children: "Button",
+  size: "small",
+  label: "Button",
 };

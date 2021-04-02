@@ -37,7 +37,7 @@ const Overview: React.FC = () => {
               </defs>
               </svg>
             </div>
-            <p className="text-xl mt-6 text-gray-600">The modern Next.js & GraphQL boilerplate</p>
+            <p className="text-3xl mt-6 text-gray-600">The modern Next.js & GraphQL boilerplate</p>
           </div>
           <ul className="flex justify-center mt-4 text-gray-400">
             <li className="px-2">
