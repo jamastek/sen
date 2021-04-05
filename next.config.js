@@ -18,6 +18,9 @@ const aliases = {
 
 module.exports = {
   // webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) 
+  future: {
+    webpack5: true
+  },
   webpack: (config) => {
     config.resolve = {
       ...config.resolve,
