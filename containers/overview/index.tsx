@@ -1,8 +1,13 @@
+import Head from "next/head"
 import { SiTwitter, SiGithub } from "react-icons/si"
 
 const Overview: React.FC = () => {
   return (
     <div>
+      <Head>
+        <title>Senja - The modern Next.js & GraphQL boilerplate</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="flex justify-center items-center min-h-screen">
         <div className="w-8/12">
           <div className="text-center">
