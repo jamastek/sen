@@ -15,6 +15,14 @@
 - ✅ React Testing Library
 - ✅ React Icons
 
+### How to
+
+Dev / build
+```
+yarn dev
+"build": "npm run build:nexus-typegen && next build",
+```
+
 ### Structures
 
 ```text

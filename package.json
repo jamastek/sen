@@ -10,10 +10,10 @@
     "prisma:migrate": "prisma migrate dev",
     "prisma:seed": "prisma db seed --preview-feature",
     "nexus:generate": "ts-node-dev --transpile-only prisma/schema",
-    "build": "npm run build:nexus-typegen && next build",
+    "build": "npm run next build",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "format": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx . --fix",
+    "lint": "eslint --ignore-path .gitignore --ext .js,.ts,.tsx . --fix",
     "test": "jest --watchAll --silent",
     "test:watch": "jest --watch",
     "test:once": "jest"
