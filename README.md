@@ -1,7 +1,7 @@
 <img alt="" src="https://res.cloudinary.com/muhrusdi/image/upload/v1616097141/senja-cover.jpg">
 
 
-### Features
+## Features
 - ✅ Next.js
 - ✅ Tailwindcss
 - ✅ Typescript
@@ -15,15 +15,31 @@
 - ✅ React Testing Library
 - ✅ React Icons
 
-### How to
+    
 
-Dev / build
-```
-yarn dev
-"build": "npm run build:nexus-typegen && next build",
+## Installation 
+
+Install senja with yarn or npm
+
+```bash 
+  git clone https://github.com/jamastek/senja.git my-app
+  cd my-app
+  yarn install
 ```
 
-### Structures
+Run the development server:
+
+```bash
+  yarn dev
+  # or
+  npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+
+## Structures
 
 ```text
 nextjs-boilerplate
@@ -78,32 +94,25 @@ nextjs-boilerplate
 └── package.json
 ```
 
-### Environment
+## Environment Variables
 
-```
-# .env
-DATABASE_URL=mysql://example:example@localhost:3306/db_name
-NEXT_PUBLIC_API_URL=/api/graphql
+To run this project, you will need to add the following environment variables to your .env file
 
-# .env.local //create this file to overrides .env file, very secret
-DATABASE_URL=mysql://example:example@localhost:3306/db_name
-NEXT_PUBLIC_ANALYTICS_ID=
-NEXT_PUBLIC_API_URL=/api/graphql
-```
+`DATABASE_URL=mysql://example:example@localhost:3306/db_name`
 
-First, run the development server:
+`API_URL=/api/graphql`
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+`NEXT_PUBLIC_API_URL="/api/graphql"`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`JWT_SECRET=example_jwt`
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+`APOLLO_KEY=service:example123`
 
-### Learn More
+`APOLLO_GRAPH_VARIANT=current`
+
+`APOLLO_SCHEMA_REPORTING=true`
+
+## Learn More
 
 To learn more about Next.js, take a look at the following resources:
 
