@@ -1,5 +1,5 @@
 import { rule, shield } from "graphql-shield"
-import { isAuthenticated } from "services/authentication"
+import { isAuthenticated } from "prisma/services/authentication"
 
 const rules = {
   isAuthenticated: rule()((parent, args, ctx) => {

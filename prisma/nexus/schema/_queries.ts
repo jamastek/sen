@@ -19,7 +19,7 @@ export const Query = objectType({
         postId: nonNull(stringArg()),
       },
       resolve: (_, args) => {
-        return prisma.post.findOne({
+        return prisma.post.findUnique({
           where: { id: Number(args.postId) },
         })
       },

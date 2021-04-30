@@ -1,7 +1,7 @@
 import Cookie from "js-cookie"
 import { verify } from "jsonwebtoken"
 
-export const getAccessToken = (isServer: boolean, cookie?: string) => {
+const getAccessToken = (isServer: boolean, cookie?: string): string => {
   if (isServer && cookie === undefined) {
       return undefined
   } else if (isServer) {
@@ -14,7 +14,7 @@ export const getAccessToken = (isServer: boolean, cookie?: string) => {
   }
 }
 
-export const isAuthenticated = (req) => {
+const isAuthenticated = (req): boolean | Error => {
   const auth = req.headers.authorization
   if (auth) {
     const [authType, authToken] = auth.split(" ")
@@ -31,7 +31,7 @@ export const isAuthenticated = (req) => {
   }
 }
 
-export const getUserWithToken = (req) => {
+const getUserWithToken = (req) => {
   const auth = req.headers.authorization
   if (auth) {
     const [authType, authToken] = auth.split(" ")
@@ -61,7 +61,7 @@ type ClientAuthType = {
   path?: string,
 }
 
-export const clientAuthorization = ({
+const clientAuthorization = ({
   context, redirect, path
 }: ClientAuthType) => {
   const auth = context.req.headers.cookie
@@ -98,4 +98,11 @@ export const clientAuthorization = ({
   return {
     notFound: true,
   }
+}
+
+export {
+  isAuthenticated,
+  clientAuthorization,
+  getAccessToken,
+  getUserWithToken,
 }
