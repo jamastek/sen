@@ -5,6 +5,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      lineHeight: {
+        "11": "3rem",
+        "12": "3.5rem",
+      },
       fontSize: {
         tiny: "0.94rem"
       },
