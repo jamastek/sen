@@ -11,7 +11,7 @@ function createIsomorphLink() {
     return new SchemaLink({ schema })
   } else {
     const { HttpLink } = require("@apollo/client/link/http")
-    const ApolloLink = require("apollo-link")
+    const { ApolloLink } = require("@apollo/client")
     // const { setContext } = require("@apollo/client/link/context")
     // const { onError } = require("@apollo/client/link/error")
 
