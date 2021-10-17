@@ -14,7 +14,7 @@ const Overview: React.FC = () => {
             <h1 className="text-3xl font-black">Sen</h1>
             <p className="text-3xl mt-6 text-gray-600">The modern Next.js & GraphQL boilerplate</p>
           </div>
-          <ul className="flex justify-center mt-4 text-gray-400">
+          <ul className="flex justify-center mt-[200px] text-gray-400">
             <li className="px-2">
               <a href="#" className="text-indigo-600 hover:text-indigo-700 transition-all">Documentation</a>
             </li>
