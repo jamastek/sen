@@ -13,14 +13,12 @@ export const config = {
 
 const apolloServer = new ApolloServer({
   schema: applyMiddleware(schema),
-  apollo: {
-    key: process.env.APOLLO_KEY,
-    graphVariant: process.env.APOLLO_GRAPH_VARIANT
-  },
   context: ({req, res}) => {
     return {req, res}
   },
 })
+
+const startServer = apolloServer.start()
 
 const cors = Cors({
   allowMethods: ["POST", "OPTIONS"],
@@ -29,19 +27,27 @@ const cors = Cors({
     "Origin, X-Requested-With, Content-Type, Accept",
     "X-HTTP-Method-Override, Authorization",
   ],
-  origin: "https://studio.apollographql.com"
 });
 
-const createHandler = apolloServer.createHandler({
-  path: process.env.API_URL,
-})
-
-const handler = cors((req, res) => {
+const handler = cors(async (req, res) => {
+  // res.setHeader("Access-Control-Allow-Credentials", "true");
+  // res.setHeader(
+  //   "Access-Control-Allow-Origin",
+  //   "https://studio.apollographql.com"
+  // );
+  // res.setHeader(
+  //   "Access-Control-Allow-Headers",
+  //   "Origin, X-Requested-With, Content-Type, Accept"
+  // );
   if (req.method === "OPTIONS") {
     return res.status(200).send("ok")
   }
 
-  return createHandler(req, res)
+  await startServer
+
+  await apolloServer.createHandler({
+    path: process.env.API_URL,
+  })(req, res)
 })
 
 export default handler
