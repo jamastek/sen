@@ -8,7 +8,7 @@
     "start": "next start",
     "prisma:generate": "prisma generate",
     "prisma:migrate": "prisma migrate dev",
-    "prisma:seed": "prisma db seed --preview-feature",
+    "prisma:seed": "prisma db seed",
     "nexus:generate": "ts-node-dev --transpile-only prisma/schema",
     "build": "next build",
     "storybook": "start-storybook -p 6006",
