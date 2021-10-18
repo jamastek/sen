@@ -3,6 +3,9 @@
   "version": "0.13.0",
   "private": true,
   "author": "mhmrofficial@gmail.com",
+  "prisma": {
+    "seed": "ts-node prisma/seed.ts"
+  },
   "scripts": {
     "dev": "next dev",
     "start": "next start",
