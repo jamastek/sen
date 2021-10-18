@@ -11,7 +11,7 @@ const Overview: React.FC = () => {
       <div className="flex justify-center items-center min-h-screen">
         <div className="w-8/12">
           <div className="text-center">
-            <h1 className="text-3xl font-black">Sen</h1>
+            <h1 className="text-3xl font-black text-red-400">Sen</h1>
             <p className="text-3xl mt-6 text-gray-600">The modern Next.js & GraphQL boilerplate</p>
           </div>
           <ul className="flex justify-center mt-[200px] text-gray-400">

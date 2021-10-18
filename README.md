@@ -8,7 +8,7 @@
 - ✅ Apollo GraphQL
 - ✅ Prisma
 - ✅ Nexus
-- ✅ Styled Components (Consider use Stitches)
+- ✅ Stitches
 - ✅ Framer Motion
 - ✅ React Hook Form
 - ✅ Storybookjs
