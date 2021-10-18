@@ -1,4 +1,4 @@
-<img alt="" src="https://res.cloudinary.com/muhrusdi/image/upload/v1616097141/senja-cover.jpg">
+<img alt="" src="https://res.cloudinary.com/muhrusdi/image/upload/v1634535749/senjs.jpg">
 
 
 ## Features
