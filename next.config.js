@@ -19,6 +19,9 @@ const aliases = {
 
 module.exports = {
   // webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) 
+  env: {
+    API_HOST: process.env.API_HOST
+  },
   webpack: (config) => {
     config.resolve = {
       ...config.resolve,
