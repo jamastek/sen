@@ -1,5 +1,4 @@
 import Head from "next/head"
-import { SiTwitter, SiGithub } from "react-icons/si"
 
 const Overview: React.FC = () => {
   return (
@@ -11,34 +10,16 @@ const Overview: React.FC = () => {
       <div className="flex justify-center items-center min-h-screen">
         <div className="w-8/12">
           <div className="text-center">
-            <h1 className="text-3xl font-black text-red-400">Sen</h1>
-            <p className="text-3xl mt-6 text-gray-600">The modern Next.js & GraphQL boilerplate</p>
+            <div className="flex justify-center">
+              <svg width="182" height="79" viewBox="0 0 182 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M30.7955 34.7273H33.9403C33.5057 26.6989 27.0369 20.8438 17.679 20.8438C8.37215 20.8438 1.3409 26.6477 1.3409 34.7273C1.3409 41.1193 5.73863 45.3381 13.946 47.8438L20.0568 49.6847C27.5483 51.9602 31.5114 54.875 31.5114 60.3722C31.5114 67.2244 25.6562 71.8523 17.2187 71.8523C9.39488 71.8523 3.82102 67.8125 3.30965 61.3182H0.0369263C0.599426 69.321 7.09374 74.8438 17.2187 74.8438C27.8551 74.8438 34.6562 68.7074 34.6562 60.3977C34.6562 52.8296 28.7756 49.071 20.9517 46.7188L15.2244 45.0313C8.90909 43.1392 4.48579 40.0455 4.48579 34.625C4.48579 28.3608 9.95738 23.8097 17.6023 23.8097C25.1193 23.8097 30.2585 28.233 30.7955 34.7273Z" fill="black"/>
+              <path d="M47.2869 74H77.0483V71.0341H50.4829V49.2756H74.875V46.3097H50.4829V24.6023H76.4347V21.6364H47.2869V74Z" fill="black"/>
+              <path d="M129.7 21.6364H126.529V68.2472H126.222L92.8302 21.6364L77 0.5L92.8302 24.6023L89.6854 29V74H92.8814V29L89.6854 24V29L92.8302 24.6023L126.58 74H129.7V21.6364Z" fill="black"/>
+              <path d="M146.031 74.125C146.805 74.125 147.438 73.4922 147.438 72.7187C147.438 71.9453 146.805 71.3125 146.031 71.3125C145.258 71.3125 144.625 71.9453 144.625 72.7187C144.625 73.4922 145.258 74.125 146.031 74.125ZM163.309 58V69.4375C163.309 71.4297 162.355 72.5 160.684 72.5C159.16 72.5 158.059 71.6094 158.059 70.25H156.152C156.152 72.7109 158.059 74.2187 160.684 74.2187C163.465 74.2187 165.246 72.5078 165.246 69.4375V58H163.309ZM177.879 62H179.754C179.668 59.5859 177.441 57.7812 174.348 57.7812C171.285 57.7812 168.879 59.5625 168.879 62.25C168.879 64.4062 170.441 65.6875 172.941 66.4062L174.91 66.9687C176.598 67.4375 178.098 68.0313 178.098 69.625C178.098 71.375 176.41 72.5312 174.191 72.5312C172.285 72.5312 170.598 71.6875 170.441 69.875H168.441C168.629 72.5 170.754 74.2813 174.191 74.2813C177.879 74.2813 179.973 72.25 179.973 69.6562C179.973 66.6562 177.129 65.6875 175.473 65.25L173.848 64.8125C172.66 64.5 170.754 63.875 170.754 62.1562C170.754 60.625 172.16 59.5 174.285 59.5C176.223 59.5 177.691 60.4219 177.879 62Z" fill="black"/>
+              </svg>
+            </div>
+            <p className="text-3xl mt-8 text-gray-600">The modern Next.js & GraphQL boilerplate</p>
           </div>
-          <ul className="flex justify-center mt-[200px] text-gray-400">
-            <li className="px-2">
-              <a href="#" className="text-indigo-600 hover:text-indigo-700 transition-all">Documentation</a>
-            </li>
-            <li>/</li>
-            <li className="px-2">
-              <a href="#" className="text-indigo-600">Components</a>
-            </li>
-            <li>/</li>
-            <li className="px-2">
-              <a href="#" className="text-indigo-600">UI</a>
-            </li>
-          </ul>
-          <ul className="flex justify-center mt-4">
-            <li className="px-2">
-              <a href="https://twitter.com/mhmrus">
-                <SiTwitter/>
-              </a>
-            </li>
-            <li className="px-2">
-              <a href="https://github.com/jamastek/senja">
-                <SiGithub/>
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
