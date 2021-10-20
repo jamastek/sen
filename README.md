@@ -19,7 +19,7 @@
 
 ## Installation 
 
-Install senja with yarn or npm
+Install sen.js with yarn or npm
 
 ```bash 
   git clone https://github.com/jamastek/senja.git my-app
