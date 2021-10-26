@@ -24,25 +24,50 @@
     "jsx": "preserve",
     "baseUrl": "./",
     "rootDirs": [
-      "./",
+      "./"
     ],
     "paths": {
       "@/*": [
-        "./*",
+        "./*"
       ],
-      "@/components/*": ["components/*"],
-      "@/containers/*": ["containers/*"],
-      "@/layout": ["containers/layout"],
-      "@/images/*": ["images/*"],
-      "@/types/*": ["types/*"],
-      "@/hooks/*": ["hooks/*"],
-      "@/apollo/*": ["apollo/*"],
-      "@/styles/*": ["styles/*"],
-      "@/services/*": ["services/*"],
-      "@/utils/*": ["utils/*"],
-      "@/prisma/*": ["prisma/*"],
-      "@/styled": ["stitches.config.js"],
-    }
+      "@/components/*": [
+        "components/*"
+      ],
+      "@/containers/*": [
+        "containers/*"
+      ],
+      "@/layout": [
+        "containers/layout"
+      ],
+      "@/images/*": [
+        "images/*"
+      ],
+      "@/types/*": [
+        "types/*"
+      ],
+      "@/hooks/*": [
+        "hooks/*"
+      ],
+      "@/apollo/*": [
+        "apollo/*"
+      ],
+      "@/styles/*": [
+        "styles/*"
+      ],
+      "@/services/*": [
+        "services/*"
+      ],
+      "@/utils/*": [
+        "utils/*"
+      ],
+      "@/prisma/*": [
+        "prisma/*"
+      ],
+      "@/styled": [
+        "stitches.config.js"
+      ]
+    },
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
