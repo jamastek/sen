@@ -1,7 +1,7 @@
 import { ApolloServer } from "apollo-server-micro"
 import Cors from "micro-cors"
 import { applyMiddleware } from "graphql-middleware"
-import schema from "prisma/schema"
+import schema from "../../../prisma/schema"
 // import { authMiddleware } from "prisma/middlewares"
 
 export const config = {
@@ -12,7 +12,7 @@ export const config = {
 }
 
 const apolloServer = new ApolloServer({
-  schema: applyMiddleware(schema),
+  schema: applyMiddleware(schema as any),
   context: ({req, res}) => {
     return {req, res}
   },
@@ -40,7 +40,8 @@ const handler = cors(async (req, res) => {
   //   "Origin, X-Requested-With, Content-Type, Accept"
   // );
   if (req.method === "OPTIONS") {
-    return res.status(200).send("ok")
+    res.end()
+    return false
   }
 
   await startServer
