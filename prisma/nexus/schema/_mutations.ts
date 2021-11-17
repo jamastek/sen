@@ -14,7 +14,7 @@ export const Mutation = objectType({
         name: stringArg(),
         email: nonNull(stringArg()),
       },
-      resolve: (_, { name, email }, ctx) => {
+      resolve: (_, { name, email }) => {
         return prisma.user.create({
           data: {
             name,
@@ -29,7 +29,7 @@ export const Mutation = objectType({
       args: {
         postId: stringArg(),
       },
-      resolve: (_, { postId }, ctx) => {
+      resolve: (_, { postId }) => {
         return prisma.post.delete({
           where: { id: Number(postId) },
         })
@@ -43,7 +43,7 @@ export const Mutation = objectType({
         content: stringArg(),
         authorEmail: stringArg(),
       },
-      resolve: (_, { title, content, authorEmail }, ctx) => {
+      resolve: (_, { title, content, authorEmail }) => {
         return prisma.post.create({
           data: {
             title,
@@ -62,7 +62,7 @@ export const Mutation = objectType({
       args: {
         postId: stringArg(),
       },
-      resolve: (_, { postId }, ctx) => {
+      resolve: (_, { postId }) => {
         return prisma.post.update({
           where: { id: Number(postId) },
           data: { published: true },

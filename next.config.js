@@ -1,4 +1,4 @@
-const path = require("path");
+const path = require("path")
 
 const aliases = {
   "@/containers": path.resolve(__dirname, "containers"),
@@ -15,7 +15,7 @@ const aliases = {
   "@/services": path.resolve(__dirname, "services"),
   "@/utils": path.resolve(__dirname, "utils"),
   "@/styled": path.resolve(__dirname, "./stitches.config.js"),
-};
+}
 
 module.exports = {
   // webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) 

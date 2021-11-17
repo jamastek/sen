@@ -1,1 +1,1 @@
-export const eq = (a: unknown, b: unknown) => a === b;
+export const eq = (a: unknown, b: unknown) => a === b

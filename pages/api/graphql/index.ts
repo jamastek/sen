@@ -27,7 +27,7 @@ const cors = Cors({
     "Origin, X-Requested-With, Content-Type, Accept",
     "X-HTTP-Method-Override, Authorization",
   ],
-});
+})
 
 const handler = cors(async (req, res) => {
   // res.setHeader("Access-Control-Allow-Credentials", "true");

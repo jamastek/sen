@@ -1,5 +1,5 @@
 import React from "react"
-import { Story } from "@storybook/react";
+import { Story } from "@storybook/react"
 import InputEl, { PropTypes } from "components/input"
 
 export default {

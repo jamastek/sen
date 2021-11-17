@@ -2,7 +2,7 @@ import Head from "next/head"
 
 const Overview: React.FC = () => {
   return (
-    <div>
+  <div>
       <Head>
         <title>Sen - The modern Next.js & GraphQL boilerplate</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
@@ -22,7 +22,7 @@ const Overview: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
+  </div>
   )
 }
 

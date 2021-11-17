@@ -1,4 +1,4 @@
-const { pathsToModuleNameMapper } = require("ts-jest/utils");
+const { pathsToModuleNameMapper } = require("ts-jest/utils")
 
 const paths = {
   "components/*": ["components/*"],
@@ -29,4 +29,4 @@ module.exports = {
     "\\.(css|less|sass|scss)$": "identity-obj-proxy",
     ...pathsToModuleNameMapper(paths)
   }
-};
+}

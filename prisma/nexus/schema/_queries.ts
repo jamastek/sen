@@ -36,7 +36,7 @@ export const Query = objectType({
 
     t.list.field("drafts", {
       type: "Post",
-      resolve: (_parent, _args, ctx) => {
+      resolve: (_parent, _args) => {
         return prisma.post.findMany({
           where: { published: false },
         })
@@ -45,7 +45,7 @@ export const Query = objectType({
 
     t.list.field("user", {
       type: "User",
-      resolve: (_, _arg, ctx) => {
+      resolve: (_, _arg) => {
         return prisma.user.findMany()
       }
     })
@@ -55,7 +55,7 @@ export const Query = objectType({
       args: {
         searchString: nullable(stringArg()),
       },
-      resolve: (_, { searchString }, ctx) => {
+      resolve: (_, { searchString }) => {
         return prisma.post.findMany({
           where: {
             OR: [
